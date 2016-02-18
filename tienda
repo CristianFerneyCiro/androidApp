@@ -119,3 +119,194 @@
 				android:layout_marginTop="5sp"/>
 
 		</LinearLayout>
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="50sp">                   //SEGUNDO LAYOUT
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="sesion de deudores"
+				android:textColor="#000000"
+				android:background="@drawable/borde"
+				android:textSize="30sp"
+				android:layout_marginLeft="20sp"
+				android:layout_marginBottom="10sp"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/editar1"
+				android:layout_marginLeft="100sp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Agregar"
+				android:textColor="#000000"
+				android:background="#ffffff"
+				android:id="@+id/texto3"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp"
+				android:padding="8sp"/>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:background="@drawable/borde1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre :"
+					android:textColor="#000000"
+					android:background="#ffffff"
+					android:id="@+id/texto4"
+					android:layout_marginLeft="20sp"
+					android:padding="8sp"/>
+
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Nombre del producto"
+					android:background="@drawable/bordes"
+					android:layout_marginLeft="2sp"
+					android:padding="8sp"
+					android:id="@+id/nombre1"
+					android:textColor="#000000"
+					android:ems="17"/>
+
+			</LinearLayout>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Agregar"
+				android:textColor="#000000"
+				android:background="@drawable/borde"
+				android:onClick="agregar1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginTop="8sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="50sp">
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Agregar Producto"
+				android:textColor="#000000"
+				android:textSize="30sp"
+				android:background="@drawable/borde"
+				android:layout_marginLeft="20sp"
+				android:layout_marginBottom="10sp"/>                //TERCER LAYOUT
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/editar1"
+				android:layout_marginLeft="100sp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Agregar"
+				android:textColor="#000000"
+				android:background="#ffffff"
+				android:id="@+id/texto1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp"
+				android:padding="8sp"/>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:background="@drawable/borde1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre :"
+					android:textColor="#000000"
+					android:background="#ffffff"
+					android:id="@+id/texto1"
+					android:layout_marginLeft="20sp"
+					android:padding="8sp"/>
+
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Nombre del producto"
+					android:background="@drawable/bordes"
+					android:layout_marginLeft="2sp"
+					android:padding="8sp"
+					android:id="@+id/nombre"
+					android:textColor="#000000"
+					android:ems="17"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:background="@drawable/borde1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Precio :"
+					android:textColor="#000000"
+					android:background="#ffffff"
+					android:id="@+id/texto1"
+					android:layout_marginLeft="20sp"
+					android:padding="8sp"/>
+
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Precio del producto"
+					android:id="@+id/precio"
+					android:inputType="number"
+					android:background="@drawable/bordes"
+					android:layout_marginLeft="14sp"
+					android:padding="8sp"
+					android:ems="17"
+					android:textColor="#000000"/>
+
+			</LinearLayout>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Agregar"
+				android:textColor="#000000"
+				android:background="@drawable/borde"
+				android:onClick="agregar"
+				android:layout_marginLeft="20sp"
+				android:layout_marginTop="8sp"/>
+
+		</LinearLayout>
+
+	</ViewFlipper>
+
+</LinearLayout>
+
