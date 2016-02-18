@@ -7,7 +7,7 @@
 	android:orientation="vertical"
 	android:background="#44C5C2">
 
-	<TextView
+	<TextView                                        // Texto principal
 		android:text="Tienda La 20"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
