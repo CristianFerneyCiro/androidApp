@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#44C5C2">
+
+	<TextView
+		android:text="Tienda La 20"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5sp"
+		android:gravity="center"
+		android:textColor="#FFFBFA"
+		android:textSize="40sp"
+		android:background="#000000"/>
+
+	<ViewFlipper
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#ACD6D4"
+		android:id="@+id/vista">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="50sp">               //PRIMER LAYOUT
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Sesion de Consulta"
+				android:textColor="#000000"
+				android:textSize="30sp"
+				android:layout_marginLeft="20sp"
+				android:layout_marginBottom="10sp"
+				android:background="@drawable/borde"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/consultar1"
+				android:layout_marginLeft="100sp"
+				android:translationZ="10dp"
+				android:elevation="6dp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Consultar"
+				android:textColor="#000000"
+				android:background="#ffffff"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp"
+				android:padding="8sp"/>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:background="@drawable/borde1"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre :"
+					android:textColor="#000000"
+					android:background="#ffffff"
+					android:layout_marginLeft="20sp"
+					android:padding="8sp"/>
+
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Nombre del producto"
+					android:background="@drawable/bordes"
+					android:layout_marginLeft="20sp"
+					android:padding="8sp"
+					android:ems="17"
+					android:id="@+id/nombre2"
+					android:textColor="#000000"/>
+
+			</LinearLayout>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Buscar"
+				android:textColor="#000000"
+				android:background="@drawable/borde"
+				android:onClick="consul"
+				android:layout_marginLeft="20sp"
+				android:layout_marginTop="8sp"
+				android:elevation="5dp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Producto"
+				android:textColor="#000000"
+				android:padding="8sp"
+				android:layout_marginTop="20sp"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp"
+				android:background="#ffffff"/>
+
+			<ListView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/lis"
+				android:background="@drawable/bordes"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="20sp"
+				android:layout_marginTop="5sp"/>
+
+		</LinearLayout>
